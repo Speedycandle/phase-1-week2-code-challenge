@@ -29,4 +29,17 @@ function renderAnimals(data) {
     });
   }
   
+  // Show the details of the selected animal
+function showAnimalDetails(animal) {
+    animalDetailsContainer.innerHTML = `
+      <h2>${animal.name}</h2>
+      <img src="${animal.image}" alt="${animal.name}">
+      <p>Votes: <span id="vote-count">${animal.votes}</span></p>
+    `;
+  
+    voteButton.disabled = false;
+    voteButton.addEventListener("click", () => {
+      incrementVotes(animal);
+    });
+  }
   
