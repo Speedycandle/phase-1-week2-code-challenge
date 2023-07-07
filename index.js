@@ -99,3 +99,14 @@ async function addAnimal(event) {
         body: JSON.stringify(newAnimal),
       });
   
+        // Clear the form inputs
+    nameInput.value = "";
+    imageInput.value = "";
+
+    
+    // Fetch and render the updated animals
+    fetchAnimals();
+  } catch (error) {
+    console.log("Error adding animal:", error);
+  }
+}
