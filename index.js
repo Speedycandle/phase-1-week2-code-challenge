@@ -15,4 +15,18 @@ async function fetchAnimals() {
       console.log("Error fetching animals:", error);
     }
   }
+
+  // Render the animals on the page
+function renderAnimals(data) {
+    animalList.innerHTML = "";
+    data.forEach((animal) => {
+      const li = document.createElement("li");
+      li.textContent = animal.name;
+      li.addEventListener("click", () => {
+        showAnimalDetails(animal);
+      });
+      animalList.appendChild(li);
+    });
+  }
+  
   
