@@ -41,6 +41,17 @@ body {
   #animals-list li:hover {
     font-weight: bold;
   }
+
+  #animal-details {
+    text-align: center;
+  }
+  
+  #animal-details img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-top: 10px;
+  }
   
 
    
