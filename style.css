@@ -16,4 +16,17 @@ body {
     gap: 20px;
   }
 
+  #animals,
+#animal-details,
+#controls,
+#add-animal {
+  flex: 1 1 300px;
+}
+
+#animal-details h2,
+#controls h2,
+#add-animal h2 {
+  margin-top: 0;
+}
+
    
