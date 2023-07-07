@@ -43,3 +43,9 @@ function showAnimalDetails(animal) {
     });
   }
   
+  // Increment the votes for the selected animal
+function incrementVotes(animal) {
+    const voteCountElement = document.getElementById("vote-count");
+    animal.votes += 1;
+    voteCountElement.textContent = animal.votes;
+  }
