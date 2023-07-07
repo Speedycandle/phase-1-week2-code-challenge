@@ -29,4 +29,18 @@ body {
   margin-top: 0;
 }
 
+#animals-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #animals-list li {
+    cursor: pointer;
+  }
+  
+  #animals-list li:hover {
+    font-weight: bold;
+  }
+  
+
    
