@@ -52,6 +52,13 @@ body {
     object-fit: cover;
     margin-top: 10px;
   }
+
+  
+#controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
   
 
    
