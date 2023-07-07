@@ -49,3 +49,12 @@ function incrementVotes(animal) {
     animal.votes += 1;
     voteCountElement.textContent = animal.votes;
   }
+
+  // Reset the votes for all animals
+async function resetVotes() {
+    try {
+      const response = await fetch(CHARACTERS_URL);
+      const data = await response.json();
+      data.forEach((animal) => {
+        animal.votes = 0;
+      });
