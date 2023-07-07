@@ -108,5 +108,11 @@ async function addAnimal(event) {
     fetchAnimals();
   } catch (error) {
     console.log("Error adding animal:", error);
+
   }
 }
+
+// Event listeners
+resetButton.addEventListener("click", resetVotes);
+addAnimalForm.addEventListener("submit", addAnimal);
+
