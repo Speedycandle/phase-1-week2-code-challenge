@@ -58,3 +58,22 @@ async function resetVotes() {
       data.forEach((animal) => {
         animal.votes = 0;
       });
+
+      await fetch(CHARACTERS_URL, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+ // Reset the UI
+ const voteCountElements = document.getElementsByClassName("vote-count");
+ Array.from(voteCountElements).forEach((element) => {
+   element.textContent = "0";
+ });
+} catch (error) {
+ console.log("Error resetting votes:", error);
+}
+}
+
