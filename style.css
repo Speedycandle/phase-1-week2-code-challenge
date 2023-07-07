@@ -60,5 +60,30 @@ body {
     margin-top: 20px;
   }
   
-
+  #add-animal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #add-animal-form label {
+    font-weight: bold;
+  }
+  
+  #add-animal-form input[type="text"] {
+    padding: 5px;
+  }
+  
+  #add-animal-form button {
+    background-color: #008b8b;
+    color: #413636;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #add-animal-form button:hover {
+    background-color: #225a2c;
+  }
    
