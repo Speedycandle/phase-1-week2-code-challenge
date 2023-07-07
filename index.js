@@ -77,3 +77,25 @@ async function resetVotes() {
 }
 }
 
+// Add a new animal
+async function addAnimal(event) {
+    event.preventDefault();
+  
+    const nameInput = document.getElementById("animal-name");
+    const imageInput = document.getElementById("animal-image");
+  
+    const newAnimal = {
+      name: nameInput.value,
+      image: imageInput.value,
+      votes: 0,
+    };
+  
+    try {
+      await fetch(CHARACTERS_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(newAnimal),
+      });
+  
