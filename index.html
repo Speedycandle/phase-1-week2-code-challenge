@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Flatacuties</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Flatacuties</h1>
+  
+  <div id="container">
+    <div id="animals">
+      <h2>Animals</h2>
+      <ul id="animals-list"></ul>
+    </div>
+
+    <div id="animal-details">
+      <h2>Animal Details</h2>
+    </div>
+
+    <div id="controls">
+      <button id="vote-button" disabled>Vote</button>
+      <button id="reset-button">Reset Votes</button>
+    </div>
+
+    <div id="add-animal">
+      <h2>Add Animal</h2>
+      <form id="add-animal-form">
+        <label for="animal-name">Name:</label>
+        <input type="text" id="animal-name" required>
+
+        <label for="animal-image">Image URL:</label>
+        <input type="text" id="animal-image" required>
+
+        <button type="submit">Add</button>
+      </form>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
